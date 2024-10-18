@@ -8,7 +8,8 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-MODEL = tf.keras.models.load_model("./tomatoes3.h5")
+MODEL = tf.keras.models.load_model("./tomatoes.h5")
+
 
 origins = [
     "http://localhost:3000",
